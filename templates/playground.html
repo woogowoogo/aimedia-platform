@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container content">
+    <h2>图片工作台</h2>
+
+    <div id="uploader" class="uploader">
+        <input type="file" id="fileInput" style="display: none;" />
+        <p id="uploadText">拖拽图片到此处，或点击上传</p>
+    </div>
+
+    <div id="loader" class="loader">正在上传...</div>
+
+    <!-- Image Container -->
+    <div class="image-container">
+        <!-- Main Uploaded Image Box -->
+        <div id="uploadedImage" class="image-box">
+            <p>尚未上传图片</p>
+        </div>
+
+        <!-- Processed Image Box -->
+        <div id="processedImage" class="image-box">
+            <p>尚未处理图片</p>
+        </div>
+    </div>
+
+    <div id="processingActions" class="processing-actions">
+        <button onclick="processImage('remove_bg')">智能抠图</button>
+        <button onclick="processImage('resize')">缩放图片</button>
+    </div>
+</div>
+
+{% endblock %}

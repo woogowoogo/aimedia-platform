@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="home-container">
+    <div class="hero">
+        <h1>欢迎使用 AI Media 智能媒体平台</h1>
+        <p>一站式图片处理工具，支持上传图片并执行智能抠图、图片缩放等AI操作。</p>
+        <a href="/playground" class="cta-button">进入工作台</a>
+    </div>
+   
+</section>
+
+<div class="features-section">
+    <h2 class="section-title">功能介绍</h2>
+    <div class="features-container">
+        <div class="feature-card">
+            <img src="https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="上传图片" class="feature-image">
+            <h3>上传图片</h3>
+            <p>从本地电脑直接上传图片到云端。</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="智能抠图" class="feature-image">
+            <h3>智能抠图</h3>
+            <p>一键去除图片背景，快速完成抠图。</p>
+        </div>
+        <div class="feature-card">
+            <img src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="图片缩放" class="feature-image">
+            <h3>图片缩放</h3>
+            <p>自定义尺寸，智能缩放图片。</p>
+        </div>
+    </div>
+</div>
+
+<div class="extra-section">
+    <h2>更多功能</h2>
+    <p>更多高级功能即将上线，敬请期待...</p>
+</div>
+
+{% endblock %}
